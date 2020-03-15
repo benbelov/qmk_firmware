@@ -41,6 +41,7 @@
 #    define RGB_DISABLE_AFTER_TIMEOUT 0 // number of ticks to wait until disabling effects
 #    define RGB_DISABLE_WHEN_USB_SUSPENDED true // turn off effects when suspended
 #    define RGB_MATRIX_KEYPRESSES
+/*
 #    define DISABLE_RGB_MATRIX_GRADIENT_UP_DOWN	
 #    define DISABLE_RGB_MATRIX_BAND_SAT
 #    define DISABLE_RGB_MATRIX_BAND_PINWHEEL_SAT
@@ -57,8 +58,13 @@
 #    define DISABLE_RGB_MATRIX_SOLID_SPLASH
 #    define DISABLE_RGB_MATRIX_SOLID_MULTISPLASH
 #    define DISABLE_RGB_MATRIX_DIGITAL_RAIN
+*/
 #    define RGB_MATRIX_MAXIMUM_BRIGHTNESS 200
-#    define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_CYCLE_ALL
+#    define RGB_MATRIX_STARTUP_MODE RGB_MATRIX_SOLID_MULTISPLASH
+#    define RGB_MATRIX_STARTUP_HUE 25  // Sets the default hue value, if none has been set
+#    define RGB_MATRIX_STARTUP_SAT 255 // Sets the default saturation value, if none has been set
+#    define RGB_MATRIX_STARTUP_VAL 120 // Sets the default brightness value, if none has been set
+#    define RGB_MATRIX_STARTUP_SPD 80 // Sets the default animation speed, if none has been set
 #    define DRIVER_ADDR_1 0b1110100
 #    define DRIVER_ADDR_2 0b1110111
 #    define DRIVER_COUNT 2
